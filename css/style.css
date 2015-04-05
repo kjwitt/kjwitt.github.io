@@ -603,7 +603,44 @@
 				.button.alt:hover
 				{
 					background: #3B353C;
-				}		
+				}	
+
+		/* Logo Button */
+		
+		input[type="logobutton"],
+		.logobutton	
+		{
+			position: relative;
+			/*display: inline-block;*/
+			background: #2b252c;/*3E3E3E*/
+			/*df7366*/
+			color: #fff;
+			text-align: center;
+			/*border-radius: 0.5em;*/
+			text-decoration: none;
+			/*padding: 0.65em 3em 0.65em 3em;*/
+			/*border: 0;*/
+			cursor: pointer;
+			outline: 0;
+			font-weight: 300;
+/*			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+*/			opacity: 1;
+   			transition: opacity .35s ease-in-out;
+   			-moz-transition: opacity .35s ease-in-out;
+   			-webkit-transition: opacity .35s ease-in-out;
+		}
+			input[type="logobutton"]:hover,
+			.logobutton:hover
+			{
+				color: #fff;
+				/*background: #01022e;*/
+				/*ef8376*/
+				opacity: 0;
+			}
 
 	/* Post */
 
@@ -770,6 +807,31 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+		}
+
+		#header .logobutton
+		{
+			position: absolute;
+			border-radius: 100%;
+			width: 4.5em;
+			height: 4.5em;
+			line-height: 4.5em;
+			text-align: center;
+			font-size: 1.25em;
+			padding: 0;
+		}
+
+		#header .logo
+		{
+			position: absolute;
+			border-radius: 100%;
+			width: 4.5em;
+			height: 4.5em;
+			line-height: 4.5em;
+			text-align: center;
+			font-size: 1.25em;
+			padding: 0;
+			z-index: -1;
 		}
 		
 		#header header
