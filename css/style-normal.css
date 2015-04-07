@@ -30,7 +30,7 @@
 
 	#header
 	{
-		background-attachment: scroll;
+		background-attachment: fixed;
 	}
 
 		#header .inner
